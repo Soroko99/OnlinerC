@@ -83,8 +83,8 @@ namespace OnlinerUITest.page_objects
             Label selectedPriceLabel = new Label(By.XPath(String.Format(appearedLabelToVerifyFiltration, "Диагональ")),
                 "Label to verify selected manufacturer");
             string selectedPrice = selectedPriceLabel.GetText();
-            Assert.True(selectedPrice.Contains(minimumScreenSize), "Actual screen size should be more or equal" + minimumScreenSize + " but found: " + selectedPrice);
-            Assert.True(selectedPrice.Contains(maximumScreenSize), "Actual price should be less or equal" + maximumScreenSize + " but found: " + selectedPrice);
+            Assert.True(selectedPrice.Contains(minimumScreenSize), "Actual screen size should be more or equal " + minimumScreenSize + " but found: " + selectedPrice);
+            Assert.True(selectedPrice.Contains(maximumScreenSize), "Actual price should be less or equal " + maximumScreenSize + " but found: " + selectedPrice);
             return this;
         }
     }
