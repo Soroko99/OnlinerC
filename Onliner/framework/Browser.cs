@@ -26,7 +26,7 @@ namespace OnlinerUITest.framework
         public static Browser GetOrCreateBrowser() {
             Browser? browser = BROWSER_CONTAINER.Value;
             if (browser == null) {
-                browser = new Browser(DriverFactory.GetOrCreateDriver());
+                browser = new Browser(new DriverFactory().GetOrCreateDriver());
                 BROWSER_CONTAINER.Value = browser;
                 return browser;
             }

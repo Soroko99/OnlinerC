@@ -10,9 +10,9 @@ namespace OnlinerUITest.framework
 {
     internal class DriverFactory
     {
-        static WebDriver?  driver;
+        WebDriver?  driver;
 
-        public static WebDriver GetOrCreateDriver()
+        public WebDriver GetOrCreateDriver()
         {
             if (driver == null) {
                 ChromeOptions options = new ChromeOptions();
