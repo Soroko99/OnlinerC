@@ -22,5 +22,10 @@ namespace OnlinerUITest.framework
             }
             else { return driver; }
         }
+
+        public void loggingSomeThings()
+        {
+            Logger.Info("Some info");
+        }
     }
 }
