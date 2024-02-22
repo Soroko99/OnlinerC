@@ -23,5 +23,10 @@ namespace OnlinerUITest.framework
             }
             else { return driver; }
         }
+
+        public void openPage(string url)
+        {
+            GetOrCreateDriver().Navigate().GoToUrl(url);
+        }
     }
 }
