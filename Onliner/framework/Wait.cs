@@ -27,6 +27,8 @@ namespace OnlinerUITest.framework
             GetWebDriverWait().IgnoreExceptionTypes(typeof(ElementNotVisibleException), typeof(NoSuchElementException)
                 , typeof(StaleElementReferenceException));
             GetWebDriverWait().Until(ExpectedConditions.ElementExists(locator));
+            //sfgdgnjdngkjdnkggdk
+            //sfgdgnjdngkjdnkggdk//sfgdgnjdngkjdnkggdk
         }
 
         public static void WaitUntilElementIsClickable(By locator) {
