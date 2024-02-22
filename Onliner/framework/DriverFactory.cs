@@ -14,7 +14,8 @@ namespace OnlinerUITest.framework
 
         public WebDriver GetOrCreateDriver()
         {
-            if (driver == null) {
+            if (driver == null)
+            {
                 ChromeOptions options = new ChromeOptions();
                 options.AddArgument("--start-maximized");
                 driver = new ChromeDriver(options);
