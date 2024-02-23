@@ -13,6 +13,7 @@ namespace OnlinerUITest.framework
     internal class Wait
     {
         static WebDriverWait wait;
+        //sjhbgjdgbhjkd
         private static WebDriverWait GetWebDriverWait()
         {
             if (wait == null)
